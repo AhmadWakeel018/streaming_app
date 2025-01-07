@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Page</title>
+    <link rel="stylesheet" href="./second_page.css" />
+  </head>
+  <body>
+    <div class="">
+      <div class="live_video">
+        <iframe
+          src="https://www.youtube.com/embed/TraIYDgpb3M?autoplay=1&loop=1&playlist=TraIYDgpb3M&mute=1&controls=0&modestbranding=1&showinfo=0&disablekb=1"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <div class="comments_box hide-scrollbar">
+          <div class="comment">
+            <img src="./assets/trend-card-profile-img.jpg" alt="" srcset="" />
+            <p class="name">Rohan</p>
+            <p class="message_text">Hello</p>
+          </div>
+          <div class="comment">
+            <img src="./assets/trend-card-profile-img.jpg" alt="" srcset="" />
+            <p class="name">Rohan</p>
+            <p class="message_text">Where are you from</p>
+          </div>
+          <div class="comment">
+            <img src="./assets/trend-card-profile-img.jpg" alt="" srcset="" />
+            <p class="name">Rohan</p>
+            <p class="message_text">What are you doing</p>
+          </div>
+          <div class="comment">
+            <img src="./assets/trend-card-profile-img.jpg" alt="" srcset="" />
+            <p class="name">Rohan</p>
+            <p class="message_text">What are you doing</p>
+          </div>
+        </div>
+        <div class="sub_videos">
+          <iframe
+            src="https://www.youtube.com/embed/QKfZUpZeT4E?autoplay=1&loop=1&playlist=QKfZUpZeT4E&mute=1&controls=0&modestbranding=1&showinfo=0&disablekb=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            src="https://www.youtube.com/embed/5HXL7I0umnc?autoplay=1&loop=1&playlist=5HXL7I0umnc&mute=1&controls=0&modestbranding=1&showinfo=0&disablekb=1"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+      <button id="addComment" class="btn btn-active">Add a Comment</button>
+      <div class="comment_form">
+        <input placeholder="Write your Comment" type="text" name="" id="" />
+        <button id="postComment" class="btn btn-active">Comment</button>
+      </div>
+    </div>
+    <script>
+      const addCommentBtn = document.getElementById("addComment");
+      const postCommentBtn = document.getElementById("postComment");
+      const commentForm = document.getElementsByClassName("comment_form")[0];
+
+      addCommentBtn.addEventListener("click", () => {
+        commentForm.style.display = "flex";
+      });
+      postCommentBtn.addEventListener("click", () => {
+        commentForm.style.display = "none";
+      });
+    </script>
+  </body>
+</html>
